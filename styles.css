@@ -62,6 +62,7 @@ header {
   background-color: white;
   color: black;
 }
+
 .image1 {
   background-image: url("icons/image_geometry_2.png");
   background-repeat: no-repeat;
@@ -86,11 +87,11 @@ header {
 
 .preview {
   width: 100%;
-  
 }
 
 .project-card .project-infor {
   background-color: #1a2236;
+
   /* height: 9.75rem; */
   padding: 1.25rem;
   margin-top: -0.4rem;
@@ -122,7 +123,7 @@ header {
 .see-project {
   color: white;
   background-image: url("icons/Union.png");
-  background-color: #1A2236;
+  background-color: #1a2236;
   border: 1px solid rgb(162 161 161);
   background-repeat: no-repeat;
   background-position: 90%;
@@ -135,7 +136,7 @@ header {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   cursor: pointer;
 }
@@ -150,6 +151,7 @@ header {
   background-color: white;
   color: black;
 }
+
 .about-me-container {
   display: flex;
   flex-direction: column;
