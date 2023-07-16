@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Portfolio-Development
-=======
 <a name="readme-top"></a>
 
 <div align="center">
@@ -175,6 +172,3 @@ I would like to thank microverse for the learning material they have provided.
 This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
->>>>>>> 61a1169bde61afe30d3e65bf594df4e9cf4948da
