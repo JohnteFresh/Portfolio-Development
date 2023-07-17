@@ -106,16 +106,20 @@ header {
 }
 
 .tech-list {
-  display: flex;
+  /* display: flex;
+  
+  justify-content: space-between; */
+
   list-style: none;
-  justify-content: space-between;
+  float: left;
   font-family: Poppins, arial, sans-serif;
   font-size: 0.625rem;
   font-weight: 300;
 }
 
 .tech-list li {
-  background-color: #98dede;
+  float: left;
+  /* background-color: #98dede; */
   margin-top: 1rem;
   padding: 0.125rem 0.625rem;
 }
