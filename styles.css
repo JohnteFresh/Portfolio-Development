@@ -244,12 +244,14 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 .getstarted {
   font-family: 'Playfair Display', arial, sans-serif;
   font-size: 3.125rem;
   font-weight: 400;
   margin-bottom: 1.25rem;
 }
+
 .contact-me input {
   display: block;
   border-radius: 0.313rem;
@@ -275,8 +277,6 @@ header {
   width: 100%;
 }
 
-
-
 .interest {
   font-family: Poppins, arial, sans-serif;
   font-size: 0.875rem;
@@ -297,12 +297,13 @@ header {
   height: 8.563rem;
   display: grid;
 }
+
 .get-resume {
   border: none;
   background-color: transparent;
   background-image: url("icons/Union\ \(2\).png");
   background-repeat: no-repeat;
-  background-position: 65% center ;
+  background-position: 65% center;
   padding-right: 2.5rem;
   color: #92dcdc;
   font-weight: 500;
@@ -317,5 +318,3 @@ header {
   list-style: none;
   margin-top: 0.7rem;
 }
-
-
