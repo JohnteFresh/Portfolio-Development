@@ -238,3 +238,31 @@ header {
   margin-left: 4.875rem;
 }
 
+.contact-me {
+  background-color: #F9F9FA;
+  background-image: url("icons/image_geometry_1.png");
+  background-repeat: no-repeat;
+  padding: 6.625rem 0.875rem 1.94rem 1.125rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.getstarted {
+  font-family: 'Playfair Display', arial, sans-serif;
+  font-size: 3.125rem;
+  font-weight: 400;
+  line-height: 3.125rem;
+  margin-bottom: 1.25rem;
+}
+.interest {
+  font-family: Poppins, arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 0.875rem;
+}
+.contact-me label {
+  font-weight: 400;
+  font-size: 0.625rem;
+  color: #7D7C84;
+  font-family: Poppins, arial, sans-serif;
+}
