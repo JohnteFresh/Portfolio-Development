@@ -355,22 +355,23 @@
             I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
           </p>
 
-           <form action="">
+           <form action="#" method="POST">
               <label for="name">Your name</label>
 
-              <input type="text" placeholder="Johnson">
+              <input type="text" placeholder="Johnson" maxlength="30" required>
 
               <label for="email">Your email</label>
 
-              <input type="email" placeholder="irungujohnson@ya...">
+              <input type="email" placeholder="irungujohnson@ya..." required>
 
               <label for="message">Your message</label>
 
-              <textarea name="meassage" id="message" placeholder="Enter your message here..."></textarea>
-
+              <textarea name="meassage" id="message" cols="43" rows="9" maxlength="500" placeholder="Enter your message here..." required></textarea>
+             
+              <button type="submit" class="collaboration">Start collaboration</button>
           </form>
 
-          <button type="button" class="collaboration">Start collaboration</button>
+         
 
         </div>
 
