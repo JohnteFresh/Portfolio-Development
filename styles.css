@@ -266,3 +266,18 @@ header {
   color: #7D7C84;
   font-family: Poppins, arial, sans-serif;
 }
+.get-resume {
+  border: none;
+  background-color: transparent;
+  background-image: url("icons/Union\ \(2\).png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 2.5rem;
+  color: #92DCDC;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 2.5rem;
+  margin-left: 6.25rem;
+  font-family: poppins, sans-serif, arial;
+  line-height: 1.5rem;
+}
