@@ -2,31 +2,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
-header {
+nav {
   background-image: url("./icons/image_geometry_1.png");
   background-repeat: no-repeat;
   height: 4.625rem;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+}
+
+nav ul {
+  display: none;
 }
 
 .menu-burger {
-  margin-right: 1.25rem;
+  margin-right: 0.875rem;
+  margin-top: 1.188rem;
 }
 
 .homepage {
-  display: flex;
-  flex-direction: column;
-  overflow-y: hidden;
+  background-image: url("icons/image_geometry_2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  margin-bottom: 3rem;
+  margin-top: 1.7rem;
 }
+
 
 .container {
   height: 21rem;
-  margin: 1rem 0.625rem;
+  margin: 0 1rem 0 1rem;
+  padding-bottom: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image1 img {
+  display: none;
 }
 
 .container h1 {
@@ -64,9 +79,7 @@ header {
 }
 
 .image1 {
-  background-image: url("icons/image_geometry_2.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  
   height: 12rem;
 }
 
@@ -89,7 +102,7 @@ header {
   width: 100%;
 }
 
-.project-card .project-infor {
+.project-infor {
   background-color: #1a2236;
   padding: 1.25rem;
   margin-top: -0.4rem;
@@ -252,29 +265,24 @@ header {
   margin-bottom: 1.25rem;
 }
 
-.contact-me input {
+.contact-me input,
+.contact-me textarea {
   display: block;
   border-radius: 0.313rem;
   border: 0.063rem solid lightgray;
   width: 100%;
   padding-left: 0.313rem;
-  height: 3.25rem;
   font-family: Poppins, sans-serif, arial, helvetica;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 0.875rem;
 }
 
 .contact-me textarea {
-  padding-left: 0.313rem;
-  padding-top: 0.625rem;
+  padding-top: 0.875rem 1rem;
   height: 7rem;
-  display: block;
-  border: 0.063rem solid lightgray;
-  border-radius: 0.313rem;
-  font-size: 0.875rem;
-  font-family: Poppins, sans-serif;
-  font-weight: 400;
-  width: 100%;
+}
+.contact-me input {
+  height: 3.25rem;
 }
 
 .interest {
@@ -317,4 +325,63 @@ header {
   justify-content: space-around;
   list-style: none;
   margin-top: 0.7rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+  nav {
+    height: 100px;
+    justify-content: center;
+    padding-top: 20px;
+    background-image: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 60%;
+    margin: auto;
+    font-size: 16px;
+    list-style: none;
+  }
+  nav ul li {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+  }
+
+  nav ul a {
+    color: #1a2236;
+    text-decoration: none;
+  }
+
+  .menu-burger {
+    display: none;
+  }
+
+  .image1 img{
+    display: block;
+    align-self: flex-end;
+    width: 50%;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  .homepage {
+    background-image: unset;
+    padding: 0;
+    max-width: 1440px;
+    display: flex;
+  }
+  .container {
+    width: 50%;
+    padding: 5% 6.3% 13.3% 13.3%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
 }
