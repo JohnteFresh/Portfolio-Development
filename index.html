@@ -26,7 +26,7 @@
       <nav>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#homepage">Home</a>
           </li>
           <li>
             <a href="#">Portfolio</a>
@@ -41,6 +41,8 @@
         <a class="menu-burger" href="#"><img src="icons/ic_menu.png"></a>
       </nav>
     </header>
+
+
     <main>
       <!-- start home page section  -->
       <section class="homepage">
@@ -65,10 +67,11 @@
         </div>
 
         <div class="image1">
-          <img src="icons/image-geometry_1.png" alt="">
+          <img src="icons/image-geometry_1.png">
         </div>
 
       </section>
+
       <!-- end home page section  -->
       <!-- project section start here   -->
       <section class="projects-container">
@@ -263,11 +266,10 @@
 
           </div>
 
-
       </section>
       <!-- about me section start here   -->
       <section class="about-me-container">
-        <div>
+        <div class="about-me">
             <h1>
               About
             </h1>
@@ -286,7 +288,7 @@
 
           <h3 class="know-h3">Languages</h3>
 
-          <ul class="techlist">
+          <ul>
 
             <li>
               JavaScript (ES5/ES6)
@@ -305,12 +307,11 @@
 
         </div>
 
-
         <div class="frameworks">
 
           <h3 class="know-h3">Frameworks</h3>
 
-          <ul class="techlist">
+          <ul>
 
             <li>
               React.js
@@ -333,7 +334,7 @@
 
           <h3 class="know-h3">Skills</h3>
 
-          <ul class="techlist">
+          <ul>
 
             <li>
               Database Management
@@ -361,34 +362,63 @@
        
       <!-- contact me section Start here  -->
       <section class="contact-me">
+        <div>
 
-          <h1 class="getstarted">
+            <h1 class="getstarted">
 
-              Get started
+                Get started
 
-          </h1>
+            </h1>
 
-          <p class="interest">
+            <p class="interest">
 
-            I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+              I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
 
-          </p>
+            </p>
+
           
-          <form action="https://formspree.io/f/mnqknaav" method="POST">
-            <label for="name">Your name</label>
+          
+            <form action="https://formspree.io/f/mnqknaav" method="POST">
+          <div class="form">
 
-            <input type="text" placeholder="Johnson" maxlength="30" required>
+            <div class="item1">
 
-            <label for="email">Your email</label>
+              <label for="name">Your name</label>
+              <input type="text" placeholder="Johnson" maxlength="30" required>
 
-            <input type="email" placeholder="irungujohnson@ya..." required>
 
-            <label for="message">Your message</label>
+            </div>
 
-            <textarea name="meassage" id="message" cols="43" rows="9" maxlength="500" placeholder="Enter your message here..." required></textarea>
-            
-            <button type="submit" class="collaboration">Start collaboration</button>
-          </form>
+  
+
+            <div class="item2">
+
+              <label for="email">Your email</label>
+              <input type="email" placeholder="irungujohnson@ya..." required>
+
+            </div>
+
+            <div class="item3">
+
+              <label for="message">Your message</label>
+              <textarea name="meassage" id="message" cols="43" rows="9" maxlength="500" placeholder="Enter your message here..." required></textarea>
+
+            </div>
+
+  
+
+          
+
+            <div class="item4">
+
+              <button type="button" class="collaboration">Start collaboration</button>
+
+            </div>
+          </div>
+            </form>
+
+         
+        </div>
 
       </section>
 
@@ -396,7 +426,7 @@
     <!-- Social icons -->
     <footer class="footer">
 
-        <input class="get-resume" type="submit" value="Get Resume">
+        <button type="button" class="get-resume"><span>Get my Resume</span></button>
 
         <ul class="social-icons">
 
