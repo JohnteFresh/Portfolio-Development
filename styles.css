@@ -372,9 +372,6 @@ nav ul {
     color: #1a2236;
   }
 
-  nav a:hover {
-    text-decoration: underline;
-  }
 
   .homepage {
     background-image: unset;
