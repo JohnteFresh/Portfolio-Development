@@ -370,8 +370,15 @@ nav ul {
   nav a {
     text-decoration: none;
     color: #1a2236;
-  }
+    transition: all 0.5s ease-in-out;
+    
 
+  }
+  nav a:hover {
+    background-color: #FCA2A2;
+    color: #1A2236;
+    font-size: 40px;
+  }
 
   .homepage {
     background-image: unset;
