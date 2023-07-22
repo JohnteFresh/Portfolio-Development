@@ -428,6 +428,11 @@ nav ul {
     background-repeat: no-repeat;
     background-size: 33.3%;
     background-position: bottom left;
+    animation-duration: 3s;
+    animation-name: john;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
   }
 
   .project-card-1 {
