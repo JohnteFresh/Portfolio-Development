@@ -68,7 +68,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://johntefresh.github.io/IrunguJohnson-Mobile-Portfolio/)
+- [Johnson-Macharia](https://johntefresh.github.io/Portfolio-Development/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
