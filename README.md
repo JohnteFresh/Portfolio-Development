@@ -68,8 +68,12 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
+<<<<<<< HEAD
 - [Live Demo Link](https://johntefresh.github.io/IrunguJohnson-Mobile-Portfolio/)
 - [Video](https://www.loom.com/share/d989be696920413b8e1ddb0408a1dc7f)
+=======
+- [Johnson-Macharia](https://johntefresh.github.io/Portfolio-Development/)
+>>>>>>> f01e3df934f602aa43cf82e951834c0f6fb3e22e
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
