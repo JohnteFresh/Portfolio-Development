@@ -69,6 +69,7 @@
 
 
 - [Live Demo Link](https://johntefresh.github.io/IrunguJohnson-Mobile-Portfolio/)
+- [Video](https://www.loom.com/share/d989be696920413b8e1ddb0408a1dc7f)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
