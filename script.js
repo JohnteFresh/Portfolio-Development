@@ -9,7 +9,14 @@ menuBtn.addEventListener('click', () => {
   z
 });
 
-
+document.getElementById('x-btn').addEventListener('click', () => {
+  const mobilePopup = document.querySelector('#mobile_menu');
+  mobilePopup.classList.toggle('visible');
+  const restOfThePage = document.querySelectorAll('section, footer');
+  for (let i = 0; i < restOfThePage.length; i += 1) {
+    restOfThePage[i].classList.toggle('hidden');
+  }
+});
 
 const linkBtn = document.querySelectorAll('.menu-bar a');
 for (let i = 0; i < linkBtn.length; i += 1) {
