@@ -15,6 +15,7 @@ header {
   height: 4.625rem;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 nav ul {
@@ -28,18 +29,22 @@ nav ul {
   justify-content: center;
   top: 0;
   width: 100vw;
-  height: 117vh;
+  height: 100vh;
   background-image: url(icons/Group\ 98.png), url(icons/Mask\ Group.png), url(icons/Group\ 50.png), url(icons/Group\ 51.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: top left, bottom center, top 74px right 57px, bottom 150px left 55px;
   background-size: 111px 74px, contain, 40px 40px, 40px 40px;
 }
 
-#homepage.hide,
-#projects-container.hide,
-#about-me-container.hide,
-#contact-form.hide,
-header.hide {
+#mobile_menu.active {
+  display: block;
+}
+
+#homepage.hiden,
+#projects-container.hiden,
+#about-me-container.hiden,
+#contact-form.hiden,
+header.hiden {
   display: none;
 }
 
@@ -65,15 +70,14 @@ header.hide {
   /* display: block; */
 }
 
-.menu {
+#menu {
   margin-right: 1.25rem;
-  margin-top: 1.2rem;
 }
 
 #x-btn {
   position: absolute;
   top: 24px;
-  right: 24px;
+  right: 20px;
 }
 
 #homepage {
@@ -415,7 +419,7 @@ footer {
     justify-content: center;
   }
 
-  nav .menu-burger {
+  nav #menu {
     display: none;
   }
 
@@ -425,19 +429,24 @@ footer {
     margin: auto;
     font-size: 1rem;
     justify-content: space-between;
+    align-content: center;
     width: 24rem;
   }
 
   nav a {
     text-decoration: none;
     color: #1a2236;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   nav a:hover {
     background-color: #fca2a2;
     color: #1a2236;
     font-size: 40px;
+  }
+
+  #mobile-menu {
+    display: none;
   }
 
   .homepage {
