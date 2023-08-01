@@ -20,8 +20,8 @@ header {
 
 nav ul {
   display: none;
-
 }
+
 #mobile_menu {
   display: none;
   position: absolute;
@@ -52,14 +52,17 @@ header.hide {
   list-style: none;
   font-family: Poppins, sans-serif, Arial;
 }
+
 .menu-bar li {
   line-height: 300%;
   font-weight: 400;
   font-size: 16px;
 }
+
 .menu-bar li a {
   text-decoration: none;
   color: #000;
+
   /* display: block; */
 }
 
@@ -106,6 +109,16 @@ header.hide {
   font-weight: 400;
 }
 
+.collaboration:hover {
+  opacity: 0.8;
+  transition: 0.25s;
+}
+
+.collaboration:active {
+  background-color: white;
+  color: black;
+}
+
 #homepage .collaboration {
   display: block;
   height: 3.125rem;
@@ -120,17 +133,6 @@ header.hide {
   font-weight: 500;
   cursor: pointer;
 }
-
-.collaboration:hover {
-  opacity: 0.8;
-  transition: 0.25s;
-}
-
-.collaboration:active {
-  background-color: white;
-  color: black;
-}
-
 
 #projects-container {
   display: grid;
@@ -172,7 +174,6 @@ header.hide {
 .tech-list ul {
   margin-top: 1rem;
   display: flex;
-
   list-style: none;
   justify-content: space-between;
   font-family: Poppins, arial, sans-serif;
@@ -197,6 +198,7 @@ header.hide {
   background-position: center right;
   width: 11.125rem;
   margin-top: 1.25rem;
+
   /* padding-top: 0.625rem; */
   padding-right: 0.625rem;
   font-weight: 500;
@@ -263,6 +265,7 @@ header.hide {
   grid-template-rows: min-content;
   row-gap: 1rem;
 }
+
 .knowledge-container h3 {
   font-family: Poppins, arial, sans-serif;
   font-size: 1.25rem;
@@ -338,7 +341,7 @@ header.hide {
 }
 
 #contact-form input,
-#contact-form textarea{
+#contact-form textarea {
   display: block;
   border-radius: 0.313rem;
   border: 0.063rem solid lightgray;
@@ -371,11 +374,11 @@ header.hide {
   transition: all 0.3s ease;
 }
 
-
 footer {
   background-color: #1a2236;
   padding: 1.75rem 0.875rem 2.25rem 1.125rem;
 }
+
 .get-resume {
   border: none;
   background-color: transparent;
@@ -404,4 +407,3 @@ footer {
   display: flex;
   transition: all 0.3s ease;
 }
-
