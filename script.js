@@ -10,7 +10,6 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-
 document.getElementById('x-btn').addEventListener('click', () => {
   const popUp = document.querySelector('#mobile_menu');
   popUp.classList.toggle('show');
