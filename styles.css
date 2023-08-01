@@ -64,10 +64,6 @@ body {
   color: #000;
 }
 
-#menu {
-  margin-right: 1.25rem;
-}
-
 #x-btn {
   position: absolute;
   top: 24px;
@@ -107,7 +103,17 @@ body {
   font-family: Poppins, arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
-  padding-top: 0.938;
+  padding-top: 0.938rem;
+}
+
+.collaboration:hover {
+  opacity: 0.8;
+  transition: 0.25s;
+}
+
+.collaboration:active {
+  background-color: white;
+  color: black;
 }
 
 #homepage .collaboration {
@@ -123,16 +129,6 @@ body {
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-}
-
-.collaboration:hover {
-  opacity: 0.8;
-  transition: 0.25s;
-}
-
-.collaboration:active {
-  background-color: white;
-  color: black;
 }
 
 #projects-container {
@@ -155,7 +151,6 @@ body {
   margin-top: -2px;
   margin-bottom: -2px;
 }
-
 
 .project-card .project-infor {
   background-color: #1a2236;
@@ -228,7 +223,7 @@ body {
   font-family: 'Playfair Display', arial, sans-serif;
   font-weight: 400;
   font-size: 3.125rem;
-  margin-bottom: 0.625rem 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 #about-me-container .description {
@@ -307,7 +302,6 @@ body {
   background-image: url("icons/ic_skills.png");
   color: white;
 }
-
 
 #contact-form {
   background-color: #f9f9fa;
@@ -409,7 +403,6 @@ body {
   transition: all 0.3s ease;
 }
 
-
 @media only screen and (min-width: 768px) {
   * {
     margin: 0;
@@ -441,7 +434,7 @@ body {
     justify-content: space-between;
     width: 24rem;
   }
-  
+
   .desktop a {
     text-decoration: none;
     color: #1a2236;
@@ -605,10 +598,6 @@ body {
     width: 36%;
   }
 
-  .about-me h2 {
-    font-size: 70px;
-  }
-
   .knowledge-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -645,6 +634,7 @@ body {
   #about-me-container h2 {
     margin-top: 1.75rem;
     margin-bottom: 1.875rem;
+    font-size: 70px;
   }
 
   #about-me-container .description {
@@ -743,5 +733,3 @@ body {
     width: 100%;
   }
 }
-
-
