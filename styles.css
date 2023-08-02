@@ -139,7 +139,7 @@ body {
 
 #projects-container h2 {
   display: inline-block;
-  margin: 2rem 1rem;
+  margin: 1rem;
   font-family: 'Playfair Display', arial, sans-serif;
   font-size: 3.125rem;
   font-weight: 400;
@@ -160,10 +160,10 @@ body {
 }
 
 .project-name {
-  color: white;
   font-family: Poppins, arial, sans-serif;
+  color: white;
+  font-weight: 700;
   font-size: 1.25rem;
-  font-weight: 300;
   line-height: 1rem;
 }
 
@@ -171,24 +171,25 @@ body {
   display: flex;
   margin-top: 1rem;
   gap: 10px;
-  font-family: Poppins, arial, sans-serif;
-  font-weight: 300;
+  color: #1a2236;
+
 }
 
 .tech-list li {
   display: inline-block;
   background-color: #98dede;
   padding: 0.375rem 0.625rem;
-  font-weight: 300;
-  line-height: 0.8rem;
   font-size: 0.625rem;
+  font-family: Poppins, arial, sans-serif;
+  font-weight: 300;
 }
+
 
 .see-project {
   color: white;
   background-image: url("icons/Union.png");
   background-color: #1a2236;
-  border: 1px solid rgb(162 161 161);
+  border: 1px solid #fff;
   background-repeat: no-repeat;
   background-position: center right 0.688rem;
   margin-top: 1.25rem;
@@ -197,6 +198,7 @@ body {
   text-decoration: none;
   font-family: Poppins, Arial, sans-serif;
   font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 500;
   text-align: start;
   cursor: pointer;
