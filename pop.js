@@ -67,34 +67,40 @@ const popupDetails = [
   }
 ];
 
+for (let i = 0; i < popupDetails.length; i += 1) {
+  const popupCard = document.createElement('div');
+  popupCard.id = `project-${i}`;
+  popupCard.classList.add('project-details');
 
+  const closeBtn = document.createElement('a');
+  closeBtn.innerHTML = '<img src="icons/ic_cross.png">';
+  closeBtn.classList.add('popup-close');
+  popupCard.appendChild(closeBtn);
 
+  const projectName = document.createElement('h2');
+  projectName.textContent = popupDetails[i].name;
+  projectName.classList.add('fonts', 'tech-color');
+  popupCard.appendChild(projectName);
 
+  const technologies = document.createElement('ul');
+  technologies.innerHTML = `<li>${popupDetails[i].technologies[0]}</li>
+  <li>${projectDetails[i].technologies[1]}</li>
+  <li>${projectDetails[i].technologies[2]}</li>`;
+  technologies.classList.add('fonts', 'tech-color');
+  popupCard.appendChild(technologies);
 
-//   const projectName = document.createElement('h2');
-//   projectName.textContent = popupDetails[i].name;
-//   projectName.classList.add('fonts', 'tech-color');
-//   popupCard.appendChild(projectName);
+  const img = document.createElement('div');
+  img.classList.add('image-box');
+  const featuredImage = document.createElement('img');
+  featuredImage.src = popupDetails[i];
+  featuredImage.classList.add('featured');
+  img.appendChild(featuredImage);
 
-//   const technologies = document.createElement('ul');
-//   technologies.innerHTML = `<li>${popupDetails[i].technologies[0]}</li>
-//   <li>${projectDetails[i].technologies[1]}</li>
-//   <li>${projectDetails[i].technologies[2]}</li>`;
-//   technologies.classList.add('fonts', 'tech-color');
-//   popupCard.appendChild(technologies);
+  for (let j = 0; j < popupDetails[i].image.length; j += 1) {
+    const subImage = document.createElement('img');
+    subImage.src = popupDetails[i].image[j];
+    subImage.classList.add('small-image');
+    imageBox.appendChild(subImage);
+  }
 
-//   const imageBox = document.createElement('div');
-//   imageBox.classList.add('image-box');
-//   const featuredImage = document.createElement('img');
-//   featuredImage.src = popupDetails[i];
-//   featuredImage.classList.add('featured');
-//   imageBox.appendChild(featuredImage);
-
-
-
-//   // for (let j = 0; j < projectDetails[i].alternative_images.length; j += 1) {
-//   //   const smallImage = document.createElement('img');
-//   //   smallImage.src = projectDetails[i].alternative_images[j];
-//   //   smallImage.classList.add('small-image');
-//   //   imageBox.appendChild(smallImage);
-//   // }
+  
