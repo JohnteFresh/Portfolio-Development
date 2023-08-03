@@ -160,13 +160,13 @@ for (let i = 0; i < popupDetails.length; i += 1) {
   const liveBtn = document.createElement('a');
   liveBtn.textContent = 'See live';
   liveBtn.href = popupDetails[i].link_version;
-  liveBtn.classList.add('poppins', 'dark-blue', 'popup-link');
+  liveBtn.classList.add('popup-link-1');
   projectDiv.appendChild(liveBtn);
 
   const sourceBtn = document.createElement('a');
   sourceBtn.textContent = 'See source';
   sourceBtn.href = popupDetails[i].link_source;
-  sourceBtn.classList.add('poppins', 'dark-blue', 'popup-link');
+  sourceBtn.classList.add('popup-link-2');
   projectDiv.appendChild(sourceBtn);
 
   const previousProject = document.createElement('a');
