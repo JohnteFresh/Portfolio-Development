@@ -124,7 +124,7 @@ for (let i = 0; i < popupDetails.length; i += 1) {
   const imageBox = document.createElement('div');
   imageBox.classList.add('image-box');
   const featuredImage = document.createElement('img');
-  featuredImage.src = popupDetails[i].images[0];
+  featuredImage.src = popupDetails[i].images['0'];
   featuredImage.classList.add('featured');
   imageBox.appendChild(featuredImage);
 

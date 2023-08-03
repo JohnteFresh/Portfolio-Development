@@ -45,6 +45,7 @@ body {
 #mobile-menu.active {
   display: block;
 }
+
 .menu-list {
   display: flex;
   flex-direction: column;
@@ -66,6 +67,7 @@ body {
 .menu-list li a:visited {
   color: #1a2236;
 }
+
 #menu {
   margin-right: 1.25rem;
 }
@@ -87,14 +89,14 @@ body {
   padding: 20px 18px 20px 15px;
 }
 
-.project-details .popup-close {
-  align-self: flex-end;
-  cursor: pointer;
-}
-
 .popup-close {
   font-size: 40px;
   font-weight: 600;
+}
+
+.project-details .popup-close {
+  align-self: flex-end;
+  cursor: pointer;
 }
 
 .project-details h2 {
@@ -169,7 +171,6 @@ body {
   display: none;
 }
 
-
 #homepage {
   margin-top: 1.875rem;
   margin-bottom: 2.5rem;
@@ -220,7 +221,6 @@ button.collaboration {
   transition: all 0.3s ease;
 }
 
-
 #project-container {
   display: grid;
   grid-template-rows: min-content;
@@ -253,7 +253,7 @@ button.collaboration {
 }
 
 .project-name {
-  font-family: poppins,sans-serif, arial;
+  font-family: poppins, sans-serif, arial;
   font-weight: 300;
   font-size: 1.25rem;
   line-height: 1rem;
@@ -318,7 +318,6 @@ button.collaboration {
   font-weight: 400;
   font-size: 3.125rem;
   font-family: 'Playfair Display', arial, sans-serif;
-  margin-bottom: 1.25rem;
 }
 
 #about-me-container .about-me {
@@ -333,7 +332,6 @@ button.collaboration {
   background-image: url('./icons/ic_download.png');
   background-repeat: no-repeat;
   background-position: 75%;
-  background-color: white;
   background-size: 24px 24px;
   margin-bottom: 1.688rem;
   margin-top: 1.25rem;
@@ -561,7 +559,6 @@ header.invisible {
   display: flex;
 }
 
-
 @media only screen and (min-width: 768px) {
   .desktop {
     height: 100px;
@@ -583,16 +580,17 @@ header.invisible {
     width: 369px;
   }
 
+  .desktop ul a {
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+  }
+
   .desktop ul a:hover {
     background-color: #fca2a2;
     color: #1a2236;
     font-size: 40px;
   }
 
-  .desktop ul a {
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
-  }
   .project-details {
     flex-direction: row;
     flex-wrap: wrap;
@@ -608,7 +606,7 @@ header.invisible {
     right: 30px;
     top: 10px;
   }
-  
+
   .project-details .image-box {
     max-width: 1700px;
     margin: 0 auto 0 auto;
@@ -661,7 +659,7 @@ header.invisible {
   .project-details li {
     padding: 12px 20px;
     font-size: 15px;
-    font-family: poppins;
+    font-family: poppins, Arial, Helvetica, sans-serif;
     border: 1px solid #1a2236;
     background-color: #fff;
   }
@@ -681,6 +679,15 @@ header.invisible {
     justify-content: flex-start;
     flex-wrap: wrap;
     position: relative;
+  }
+
+  .container p {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: left;
   }
 
   .project-div p {
@@ -752,18 +759,8 @@ header.invisible {
 
   #homepage .container h1 {
     line-height: 1em;
-    font-size: min(7.63vw, 110px); 
+    font-size: 50px;
     margin-bottom: 46px;
-  }
-
-  .container p {
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: -0.01em;
-    text-align: left;
-
   }
 
   #homepage button {
@@ -772,7 +769,7 @@ header.invisible {
     margin-bottom: 0.938rem;
     width: 15.875rem;
     height: 4.375rem;
-    border: none
+    border: none;
   }
 
   #project-container {
@@ -897,7 +894,6 @@ header.invisible {
 
   #project-container div.w6 .project-name {
     overflow: unset;
-    font-size: min(4.1vw, 60px);
     line-height: 1em;
     font-weight: 700;
   }
@@ -994,14 +990,14 @@ header.invisible {
   #contact-form {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 168px min(31%, 446px);
+    padding: 20px;
     background-image: url("icons/image-geometry_6.png"), url("icons/image-geometry_7.png");
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
   }
 
   #contact-form h2 {
-    font-size: min(7.63vw, 110px);
+    font-size: 50px;
     margin-bottom: 40px;
     line-height: 110px;
   }
@@ -1076,10 +1072,6 @@ header.invisible {
     margin: 0;
   }
 
-  .fonts {
-
-  }
-
   #footer button.pop {
     margin: 0;
     font-size: 18px;
@@ -1104,9 +1096,7 @@ header.invisible {
     top: 0;
     content: "Get my CV";
   }
-
 }
-
 
 @keyframes john {
   from {
