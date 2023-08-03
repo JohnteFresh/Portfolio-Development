@@ -1,5 +1,5 @@
 const hamburgerBtn = document.querySelector('#menu');
-const mobileMenu = document.querySelector('#mobile_menu');
+const mobileMenu = document.querySelector('#mobile-menu');
 hamburgerBtn.addEventListener('click', () => {
   hamburgerBtn.classList.toggle('active');
   mobileMenu.classList.toggle('active');
@@ -18,3 +18,4 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   hamburgerBtn.classList.remove('active');
   mobileMenu.classList.remove('active');
 }));
+
