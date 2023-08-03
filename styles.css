@@ -152,7 +152,6 @@ body {
 .project-details [class*="popup-link-"] {
   margin: 29px auto 0 auto;
   background-image: url(icons/images-popup/ic_github_white.svg);
-  /* background-color: #000; */
   background-repeat: no-repeat;
   background-position: right 20px center;
   font-size: 1.125rem;
@@ -165,9 +164,9 @@ body {
   width: 76%;
   text-decoration: none;
 }
+
 .project-details .popup-link-1 {
   background-image: url(icons/ic_link.png);
-  padding-left: ;
 }
 
 .project-details .popup-link-2 {
@@ -179,6 +178,7 @@ body {
 .popup-link-1:hover {
   background-color: rgba(179, 197, 245, 0.95);
 }
+
 .popup-link-1:active {
   background-color: #858383;
   color: #fff;
@@ -187,12 +187,11 @@ body {
 .popup-link-2:hover {
   background-color: rgba(26, 34, 54, 0.95);
 }
+
 .popup-link-2:active {
   background-color: #fff;
   color: #333;
 }
-
-
 
 .project-details .popup-link:nth-of-type(2) {
   background-image: url(icons/popupImages/ic_github_white.png);
@@ -697,7 +696,6 @@ header.invisible {
   .project-details li:not(:last-of-type) {
     margin-right: 20px;
   }
-  
 
   .project-details .project-div {
     background-image: url(./icons/images-popup/ic_arrow_left.svg), url(./icons/images-popup/ic_arrow_right.svg);
@@ -729,9 +727,7 @@ header.invisible {
   .project-details p:last-of-type {
     margin-top: 1.5em;
   }
-  .popup-link-1 {
-    background-image: url(./icons/ic_link.png);
-  }
+
   .project-details [class*="popup-link-"] {
     width: 35%;
     margin: 40px 30px 120px 0;
@@ -957,7 +953,7 @@ header.invisible {
   #about-me-container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 216px min(11%, 160px) 158px min(11%, 160px);
+    padding: 216px 158px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -1023,7 +1019,8 @@ header.invisible {
   #contact-form {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 20px;
+    padding-left: 14rem;
+    padding-right: 14rem;
     background-image: url("icons/image-geometry_6.png"), url("icons/image-geometry_7.png");
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
