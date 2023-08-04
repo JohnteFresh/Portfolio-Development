@@ -106,15 +106,6 @@ body {
   padding-top: 0.938rem;
 }
 
-.collaboration:hover {
-  opacity: 0.8;
-  transition: 0.25s;
-}
-
-.collaboration:active {
-  background-color: white;
-  color: black;
-}
 
 #homepage .collaboration {
   display: block;
@@ -308,7 +299,7 @@ body {
   background-image: url("icons/image_geometry_1.png");
   background-repeat: no-repeat;
   padding: 6.625rem 0.875rem 1.94rem 1.125rem;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 136px);
@@ -368,6 +359,20 @@ body {
   font-size: 1rem;
   transition: all 0.3s ease;
 }
+#error-text {
+  display: none;
+}
+#contact-form .collaboration:hover,
+#homepage .collaboration:hover {
+  opacity: 0.8;
+  transition: 0.25s;
+}
+
+#contact-form .collaboration:active,
+#homepage .collaboration:active {
+  background-color: white;
+  color: black;
+}
 
 #footer {
   background-color: #1a2236;
@@ -401,6 +406,14 @@ body {
 #footer a {
   display: flex;
   transition: all 0.3s ease;
+}
+
+#sendMessage small {
+  color: #e45865;
+  font-size: 10px;
+  display: block;
+  min-height: 10px;
+  margin-bottom: 8px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -655,13 +668,14 @@ body {
   #contact-form {
     max-width: 90rem;
     margin: 0 auto;
-    padding-left: 30%;
+    /* padding-left: 30%;
     padding-right: 50%;
     padding-right: 2rem;
-    padding-top: 5rem;
+    padding-top: 5rem; */
+    padding: 168px min(31%, 446px);
     background-image: url(icons/image-geometry_6.png), url(icons/image-geometry_7.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: top 20% left, bottom right;
+    background-position: top left, bottom right;
   }
 
   #contact-form .form {
@@ -670,6 +684,19 @@ body {
     gap: 10px;
     width: 50%;
   }
+
+  /* #contact-form form {
+    display: grid;
+    column-gap: 35px;
+    grid-template-areas:
+      'yourname youremail'
+      'inputname inputemail'
+      'errorname erroremail'
+      'yourmessage yourmessage'
+      'textarea textarea'
+      'button button';
+  } */
+
 
   .item3 {
     grid-column: 1/3;
@@ -719,6 +746,14 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  #send-message small {
+    grid-area: erroremail;
+    color: #e45865;
+    display: block;
+    height: 35px;
+    margin-bottom: 0;
   }
 }
 
