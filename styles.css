@@ -669,6 +669,7 @@ body {
   #contact-form {
     max-width: 90rem;
     margin: 0 auto;
+    padding: 250px;
     background-image: url(icons/image-geometry_6.png), url(icons/image-geometry_7.png);
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
